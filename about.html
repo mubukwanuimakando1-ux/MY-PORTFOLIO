@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABOUT ME IMAKANDO MUBUKWANU</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:green;
+    color:greeb;
+}
+
+
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:color:pink;
+    background-size:400% 400%;
+    animation:bgmove 10s infinite alternate;
+    z-index:-1;
+    opacity:0.15;
+}
+
+@keyframes bgmove{
+    0%{background-position:0% 50%;}
+    100%{background-position:100% 50%;}
+}
+
+nav{
+    background:rgba(0,0,0,0.8);
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+   
+    font-weight:bold;
+   color:orange
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00f7ff;
+}
+
+.container{
+    padding:60px 10%;
+}
+
+.container h1{
+    text-align:center;
+    font-size:50px;
+    color:white;
+    margin-bottom:40px;
+    text-shadow:0 0 15px #00f7ff;
+}
+
+.about-box{
+    background:orange;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,247,255,0.3);
+    transition:0.5s;
+}
+
+.about-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px #00f7ff;
+}
+
+.about-box p{
+    line-height:2;
+    font-size:18px;
+}
+
+.skills{
+    margin-top:4px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:pink;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.10s;
+}
+
+.skill:hover{
+    background:white;
+    color:black;
+    transform:scale(1.05);
+}
+
+footer{
+    margin-top:5px;
+    text-align:center;
+    padding:20px;
+    background:ORANGE;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">IMAKANDO MUBUKWANU</div>
+  <div class="logo">
+<img src="images/logo.png" alt="KMU">
+
+    <div>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="services.html">MY SERVICES</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <h1>ABOUT ME</h1>
+
+    <div class="about-box">
+        <p>
+            I am IMAKANDO MUBUKWANU, a dedicated Cyber Security student at Kapasa Makasa University.
+            I specialize in web development, cyber crimes investigation, and digital forensics.
+            I have strong passion for technology innovation, network security,
+            penetration testing, ethical hacking, and secure software development.
+        </p>
+
+        <br>
+
+        <p>
+            My goal is to use technology to create secure systems and help organizations
+            protect their digital information from cyber threats.
+            I enjoy learning modern technologies and improving my skills in programming,
+            security analysis, and digital investigations.
+        </p>
+    </div>
+
+    <div class="skills">
+
+        <div class="skill">
+            <h2>Web Development</h2>
+            <p>Professional responsive websites using HTML, CSS, JavaScript and modern technologies.</p>
+        </div>
+
+        <div class="skill">
+            <h2>Cyber Security</h2>
+            <p>Knowledge in ethical hacking, vulnerability analysis, and system protection.</p>
+        </div>
+
+        <div class="skill">
+            <h2>Digital Forensics</h2>
+            <p>Investigation and analysis of cyber crimes and digital evidence collection.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 IMAKANDO MUBUKWANU
+</footer>
+
+</body>
+</html>
