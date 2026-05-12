@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IMAKANDO MUBUKWANU | Portfolio</title>
+    
 
 <style>
 *{
     margin:0;
-    padding:0;
+    
+         padding:0;
+    
     box-sizing:border-box;
 }
 
 body{
     background-image: url('https://github.com/mubukwanuimakando1-ux/MY-PORTFOLIO/blob/main/download.jpeg?raw=true');
     background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    
+    background-position:CENTER;
+    
+           background-repeat:no-REPEAT;
+    
     height:100vh;
-    margin:0;
+    
+        
 }
 
 body::before{
     content:"";
-    position:fixed;
+    POSITION:FIXED;
+
     top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:linear-gradient(45deg, cyan, blue, limegreen, magenta);
+    
+             left:0;
+    
+             width:100%;
+    
+             height:100%;
+    
+  
     background-size:400% 400%;
+    
     animation:bgmove 12s infinite alternate;
+    
     z-index:-1;
     opacity:0.3;
 }
@@ -42,11 +57,17 @@ body::before{
 
 nav{
     background:rgba(0,0,0,0.7);
-    padding:15px 30px;
-    display:flex;
+    
+      padding:15px 30px;
+    
+       display:flex;
+
+    
     justify-content:space-between;
-    align-items:center;
+    
+          align-items:center;
     position:sticky;
+    
     top:0;
     backdrop-filter:blur(10px);
 }
@@ -58,18 +79,14 @@ nav{
 }
 
 .logo img{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    object-fit:cover;
+    width:80px;
+    
+    height:80px;
+    
+    
 }
 
-.logo span{
-    font-size:24px;
-    font-weight:bold;
-    color:orange;
-    text-shadow:0 0 10px cyan;
-}
+
 
 .menu{
     position:relative;
@@ -123,10 +140,16 @@ nav{
 
 .hero{
     height:85vh;
+
+    
     display:flex;
+    
     justify-content:center;
-    align-items:center;
-    flex-direction:column;
+    
+    ALIGN-ITEMS:CENTER;
+    
+    FLEX-DIRECTION:column;
+
     text-align:center;
     padding:20px;
 }
@@ -201,24 +224,33 @@ footer{
     </div>
     <div class="menu">
         <button>MENU ▼</button>
+        
         <div class="dropdown">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT ME</a>
-            <a href="services.html">MY SERVICES</a>
-        </div>
-    </div>
-</nav>
+            
+         <a href="index.html">HOME</a>
+            
+         <a href="about.html">ABOUT ME</a>
+            
+         <a href="services.html">MY SERVICES</a>
+          </div>
+           </div>
+           </nav>
 
 <section class="hero">
-    <h1>WELCOME TO MY PORTFOLIO</h1>
-    <h2>CYBER SECURITY STUDENT | WEB DEVELOPER | DIGITAL FORENSICS SPECIALIST</h2>
-    <p>
+    
+ <h1>WELCOME TO MY PORTFOLIO</h1>
+    
+ <h2>CYBER SECURITY STUDENT | WEB DEVELOPER | DIGITAL FORENSICS SPECIALIST</h2>
+    
+ <p>
         My name is IMAKANDO MUBUKWANU, a Cyber Security student at Kapasa Makasa University.
         I specialize in WEB DEVELOPMENT, CYBER CRIMES INVESTIGATION, and DIGITAL FORENSICS.
         I am passionate about technology, cyber defense, ethical security practices,
         and creating secure modern systems.
-    </p>
-    <a href="about.html" class="btn">EXPLORE MORE</a>
+</p>
+    
+<a href="about.html" class="btn">EXPLORE MORE</a>
+    
 </section>
 
 <footer>
