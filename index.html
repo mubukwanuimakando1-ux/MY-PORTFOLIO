@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services RODNEY CHANDA</title>
+<title>IMAKANDO MUBUKWANU | Portfolio</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-image: url('https://raw.githubusercontent.com/chandarodney54-pixel/CHANDA/main/IMG-20260512-WA0000.jpg');
+    background-image: url('https://github.com/mubukwanuimakando1-ux/MY-PORTFOLIO/blob/main/images%20(3).jpeg?raw=true');
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    background-attachment:fixed;
+    height:100vh;
+    margin:0;
 }
 
 body::before{
@@ -31,8 +31,8 @@ body::before{
     background:linear-gradient(45deg, cyan, blue, limegreen, magenta);
     background-size:400% 400%;
     animation:bgmove 12s infinite alternate;
-    opacity:0.2;
     z-index:-1;
+    opacity:0.3;
 }
 
 @keyframes bgmove{
@@ -41,11 +41,13 @@ body::before{
 }
 
 nav{
-    background:rgba(0,0,0,0.8);
+    background:rgba(0,0,0,0.7);
     padding:15px 30px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:sticky;
+    top:0;
     backdrop-filter:blur(10px);
 }
 
@@ -56,127 +58,136 @@ nav{
 }
 
 .logo img{
-    width:55px;
-    height:55px;
+    width:60px;
+    height:60px;
     border-radius:50%;
     object-fit:cover;
 }
 
 .logo span{
-    color:orange;
-    font-size:22px;
+    font-size:24px;
     font-weight:bold;
+    color:orange;
     text-shadow:0 0 10px cyan;
 }
 
-.nav-links a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    transition:0.3s;
-    font-size:16px;
+.menu{
+    position:relative;
+}
+
+.menu button{
+    padding:12px 20px;
+    background:blue;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
     font-weight:bold;
-}
-
-.nav-links a:hover{
-    color:cyan;
-}
-
-.container{
-    padding:60px 10%;
-}
-
-.container h1{
-    text-align:center;
-    font-size:50px;
-    color:pink;
-    margin-bottom:50px;
-    text-shadow:0 0 15px white;
-    animation:glow 2s infinite alternate;
-}
-
-@keyframes glow{
-    from{text-shadow:0 0 10px cyan;}
-    to{text-shadow:0 0 30px cyan,0 0 50px blue;}
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:rgba(0,0,0,0.85);
     color:white;
-    padding:30px;
-    border-radius:20px;
-    transition:0.5s;
-    box-shadow:0 0 15px cyan;
-    backdrop-filter:blur(5px);
+    transition:0.4s;
 }
 
-.card:hover{
-    transform:translateY(-10px) scale(1.03);
+.menu button:hover{
     background:pink;
     color:black;
-    box-shadow:0 0 25px cyan;
+    transform:scale(1.1);
 }
 
-.card h2{
-    margin-bottom:15px;
-    color:orange;
+.dropdown{
+    display:none;
+    position:absolute;
+    left:0;
+    top:100%;
+    background:green;
+    min-width:160px;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 0 10px cyan;
 }
 
-.card:hover h2{
-    color:darkblue;
+.dropdown a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    transition:0.3s;
 }
 
-.card p{
-    line-height:1.8;
+.dropdown a:hover{
+    background:pink;
+    color:black;
 }
 
-.contact{
-    margin-top:60px;
+.menu:hover .dropdown{
+    display:block;
+}
+
+.hero{
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
     text-align:center;
-    background:rgba(0,0,0,0.7);
-    padding:40px;
-    border-radius:20px;
-    backdrop-filter:blur(5px);
+    padding:20px;
 }
 
-.contact h2{
+.hero h1{
+    font-size:55px;
     color:orange;
+    text-shadow:0 0 20px cyan;
+    animation:glow 2s infinite alternate;
     margin-bottom:20px;
 }
 
-.contact a{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 30px;
+.hero h2{
+    font-size:28px;
+    color:white;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    line-height:1.8;
+    font-size:18px;
+    color:white;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:12px 30px;
     background:blue;
     color:white;
     text-decoration:none;
     border-radius:30px;
-    transition:0.4s;
+    transition:0.3s;
     font-weight:bold;
 }
 
-.contact a:hover{
+.btn:hover{
+    transform:scale(1.05);
     background:orange;
     color:black;
-    transform:scale(1.1);
     box-shadow:0 0 20px cyan;
 }
 
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px cyan;
+    }
+    to{
+        text-shadow:0 0 30px cyan,0 0 50px blue;
+    }
+}
+
 footer{
-    margin-top:40px;
     text-align:center;
-    padding:20px;
-    background:rgba(0,0,0,0.9);
-    color:orange;
-    font-weight:bold;
+    padding:15px;
+    background:orange;
+    color:black;
     font-size:18px;
+    position:fixed;
+    bottom:0;
+    width:100%;
 }
 </style>
 </head>
@@ -185,57 +196,33 @@ footer{
 
 <nav>
     <div class="logo">
-        <img src="https://raw.githubusercontent.com/chandarodney54-pixel/CHANDA/main/logo.png" alt="RODNEY LOGO">
-        <span>RODNEY CHANDA</span>
+        <img src="https://github.com/mubukwanuimakando1-ux/MY-PORTFOLIO/blob/main/logo.png?raw=true" alt="IMAKANDO">
+        <span>@IMAKANDO MUBUKWANU</span>
     </div>
-    <div class="nav-links">
-        <a href="index.html">HOME PAGE</a>
-        <a href="about.html">ABOUT RODNEY CHANDA</a>
-        <a href="services.html">MY CONTACTS</a>
+    <div class="menu">
+        <button>MENU ▼</button>
+        <div class="dropdown">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT ME</a>
+            <a href="services.html">MY SERVICES</a>
+        </div>
     </div>
 </nav>
 
-<div class="container">
-    <h1>MY SERVICES</h1>
-
-    <div class="cards">
-        <div class="card">
-            <h2>ETHICAL HACKING</h2>
-            <p>
-                I AM A PROFESSIONAL ETHICAL HACKER HELPING ORGANIZATIONS IN TESTING THEIR SYSTEMS, FIND VULNERABILITIES, AND PROVIDING POTENTIAL SOLUTIONS IN PATCHING THESE WEAKNESSES BEFORE THE MALICIOUS ACTORS DO.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>WIRELESS SECURITY</h2>
-            <p>
-                MANAGE SECURE WIRELESS COMMUNICATIONS, AND ENDPOINTS INVOLVED IN THE COMMUNICATION
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>FRAUD DETECTION</h2>
-            <p>
-                HELPING IN DETECTING, AND MITIGATING FRAUD RISKS BEFORE SYSTEMS ARE COMPROMIZED
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>OPERATING SYSTEM</h2>
-            <p>
-                TO MANAGE COMPUTER RESOURCES, AND IMPROVE PERFORMANCE AND SECURITY
-            </p>
-        </div>
-    </div>
-
-    <div class="contact">
-        <h2>FEEL FREE TO REACH OUT FOR ANY SERVICES</h2>
-        <a href="index.html">BACK TO HOME</a>
-    </div>
-</div>
+<section class="hero">
+    <h1>WELCOME TO MY PORTFOLIO</h1>
+    <h2>CYBER SECURITY STUDENT | WEB DEVELOPER | DIGITAL FORENSICS SPECIALIST</h2>
+    <p>
+        My name is IMAKANDO MUBUKWANU, a Cyber Security student at Kapasa Makasa University.
+        I specialize in WEB DEVELOPMENT, CYBER CRIMES INVESTIGATION, and DIGITAL FORENSICS.
+        I am passionate about technology, cyber defense, ethical security practices,
+        and creating secure modern systems.
+    </p>
+    <a href="about.html" class="btn">EXPLORE MORE</a>
+</section>
 
 <footer>
-    @ RODNEY CHANDA #KMU 2026
+    © 2026 IMAKANDO MUBUKWANU | Professional Cyber Portfolio
 </footer>
 
 </body>
