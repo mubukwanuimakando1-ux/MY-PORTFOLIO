@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,61 +7,54 @@
 
 <style>
 *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
     background-image: url('https://github.com/mubukwanuimakando1-ux/MY-PORTFOLIO/blob/main/download.jpeg?raw=true');
-    background-size: cover;
-    
-    background-position: center;
-    
-      background-repeat: no-repeat;
-    
-     height: 100vh;
-    
-    margin: 0;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:100vh;
+    margin:0;
 }
-
 
 body::before{
     content:"";
-    
     position:fixed;
-    
+    top:0;
+    left:0;
     width:100%;
     height:100%;
-  
-    background-size:400% 400%;
-    animation:bgmove 12s infinite alternate;
-    
-}
-
-@keyframes bgmove{
-    0%{background-position:0% 50%;}
-    100%{background-position:100% 50%;}
+    background:rgba(0,0,0,0.6);
+    z-index:-1;
 }
 
 nav{
-    
     padding:15px;
-               display:flex;
+    display:flex;
     justify-content:space-between;
-                    align-items:center;
-     position:sticky;
-                top:0;
-        backdrop-filter:BLUR(10px);
+    align-items:center;
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,0.3);
 }
 
 .logo{
-           font-size:30px;
+    font-size:30px;
     font-weight:bold;
-                color:ORANGE;
-              
+    color:orange;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
-    .logo img {
-               WIDTH: 85px;     
-    HEIGHT: 90px;    
-            
-              
+
+.logo img{
+    width:85px;
+    height:90px;
 }
 
 .menu{
@@ -71,67 +63,42 @@ nav{
 
 .menu button{
     padding:12px 20px;
-    
-    background:BLUE;
-    
+    background:blue;
     border:none;
-    
     border-radius:8px;
-    
     cursor:pointer;
-    
-    font-weight:BOLD;
+    font-weight:bold;
     transition:0.4s;
 }
 
 .menu button:hover{
-    background:PINK;
-           color:white;
-               transform:scale(1.1);
+    background:pink;
+    color:white;
+    transform:scale(1.1);
 }
 
 .dropdown{
-         display:none;
-    
-             
-             right:1PX;
-    background:GREEN;
-    
-    min-width:10px;
-    
-    
-    overflow:hidden;
-    
-    box-shadow:0 0 5px PINK;
-
     display:none;
     position:absolute;
-    left:-0;       
-    
-   
-    
+    left:0;
+    top:100%;
+    background:green;
+    min-width:150px;
+    border-radius:5px;
     overflow:hidden;
-    box-shadow:0 0 5px ;
-
-
-    
+    box-shadow:0 0 5px pink;
 }
 
 .dropdown a{
     display:block;
-    
     color:white;
-    
     text-decoration:none;
-    
-    padding:5px;
-    
+    padding:10px;
     transition:0.4s;
 }
 
 .dropdown a:hover{
-    background:PINK;
-    
+    background:pink;
     color:black;
 }
 
@@ -141,73 +108,56 @@ nav{
 
 .hero{
     height:90vh;
-    
-         display:flex;
+    display:flex;
     justify-content:center;
-    
-        align-items:center;
+    align-items:center;
     flex-direction:column;
-    
     text-align:center;
-        padding:20px;
+    padding:20px;
 }
 
 .hero h1{
     font-size:60px;
     color:orange;
-    
-    text-shadow:0 0 20px ORANGE;
-    
+    text-shadow:0 0 20px orange;
     animation:glow 2s infinite alternate;
 }
 
 .hero h2{
     margin-top:20px;
-    
     font-size:30px;
-    
-    color:orange;
+    color:white;
 }
 
 .hero p{
     margin-top:20px;
-    
     max-width:700px;
-    
     line-height:1.8;
-        font-size:30px;
-    
-       color:orange;
-    FONT-SIZE:20PX;
+    font-size:20px;
+    color:white;
 }
 
 .btn{
     margin-top:30px;
-    
-          padding:15px 35px;
-    
-            background:blue;
-    color:GREEN;
+    padding:15px 35px;
+    background:blue;
+    color:white;
     text-decoration:none;
-    
-       border-radius:30px;
-    
+    border-radius:30px;
     transition:0.4s;
-    
     font-weight:bold;
 }
 
 .btn:hover{
     transform:scale(1.1);
-    
     background-color:orange;
-    color:orange;
+    color:black;
     box-shadow:0 0 20px orange;
 }
 
 @keyframes glow{
     from{
-        text-shadow:0 0 10px ORANGE;
+        text-shadow:0 0 10px orange;
     }
     to{
         text-shadow:0 0 30px #00f7ff,0 0 50px black;
@@ -216,12 +166,9 @@ nav{
 
 footer{
     text-align:center;
-    
-      padding:10px;
-    
-       background-color:GREEN;
+    padding:10px;
+    background-color:green;
     color:black;
-    
     font-size:30px;
 }
 </style>
@@ -230,41 +177,35 @@ footer{
 <body>
 
 <nav>
-  <div class="logo">
-<img src="https://github.com/mubukwanuimakando1-ux/MY-PORTFOLIO/blob/main/logo.png?raw=true" alt="KMU">
-<span>@IMAKANDO MUBUKWANU</span>
-
-             <div class="menu">
+    <div class="logo">
+        <img src="https://github.com/mubukwanuimakando1-ux/MY-PORTFOLIO/blob/main/logo.png?raw=true" alt="KMU">
+        <span>@IMAKANDO MUBUKWANU</span>
+    </div>
+    <div class="menu">
         <button>MENU ▼</button>
-
-                        <div class="dropdown">
-                            
+        <div class="dropdown">
             <a href="index.html">HOME</a>
-                            
-                          <a href="about.html">ABOUT ME</a>
-                            
-                   <a href="services.html">MY SERVICES</a>
+            <a href="about.html">ABOUT ME</a>
+            <a href="services.html">MY SERVICES</a>
         </div>
     </div>
 </nav>
 
 <section class="hero">
     <h1>WELCOME TO MY PORTFOLIO</h1>
-
     <h2>CYBER SECURITY STUDENT SPECIALIZED IN WEB DEVELOPMENT, CYBER CRIMES INVESTIGATION, THREAT INTELLIGENCE ANALYST</h2>
-
     <p>
         My name is IMAKANDO MUBUKWANU, a Cyber Security student at Kapasa Makasa University.
         I specialize in WEB DEVELOPMENT, CYBER CRIMES INVESTIGATION, and DIGITAL FORENSICS.
         I am passionate about technology, cyber defense, ethical security practices,
         and creating secure modern systems.
     </p>
-
-    <a href="about.html" class="btn">EXPPLORE MORE</a>
+    <a href="about.html" class="btn">EXPLORE MORE</a>
 </section>
 
-</body>
-</html>
+<footer>
+    © 2026 IMAKANDO MUBUKWANU | Professional Cyber Portfolio
+</footer>
 
 </body>
 </html>
