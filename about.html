@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,21 +14,25 @@
 }
 
 body{
-    background-color:green;
-    color:greeb;
+    background-image: url('https://github.com/mubukwanuimakando1-ux/MY-PORTFOLIO/blob/main/images%20(3).jpeg?raw=true');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
-
 
 body::before{
     content:"";
     position:fixed;
+    top:0;
+    left:0;
     width:100%;
     height:100%;
-    background:color:pink;
+    background:linear-gradient(45deg, cyan, blue, limegreen, magenta);
     background-size:400% 400%;
     animation:bgmove 10s infinite alternate;
     z-index:-1;
-    opacity:0.15;
+    opacity:0.2;
 }
 
 @keyframes bgmove{
@@ -39,28 +42,44 @@ body::before{
 
 nav{
     background:rgba(0,0,0,0.8);
-    padding:15px;
+    padding:15px 30px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    backdrop-filter:blur(10px);
 }
 
 .logo{
-    font-size:30px;
-   
-    font-weight:bold;
-   color:orange
+    display:flex;
+    align-items:center;
+    gap:15px;
 }
 
-nav a{
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo span{
+    font-size:22px;
+    font-weight:bold;
+    color:orange;
+    text-shadow:0 0 10px cyan;
+}
+
+.nav-links a{
     color:white;
     text-decoration:none;
-    margin-left:20px;
+    margin-left:25px;
     transition:0.3s;
+    font-size:16px;
+    font-weight:bold;
 }
 
-nav a:hover{
-    color:#00f7ff;
+.nav-links a:hover{
+    color:cyan;
 }
 
 .container{
@@ -70,55 +89,79 @@ nav a:hover{
 .container h1{
     text-align:center;
     font-size:50px;
-    color:white;
+    color:pink;
     margin-bottom:40px;
-    text-shadow:0 0 15px #00f7ff;
+    text-shadow:0 0 15px white;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{text-shadow:0 0 10px cyan;}
+    to{text-shadow:0 0 30px cyan,0 0 50px blue;}
 }
 
 .about-box{
-    background:orange;
+    background:rgba(255,165,0,0.9);
     padding:40px;
     border-radius:20px;
-    box-shadow:0 0 20px rgba(0,247,255,0.3);
+    box-shadow:0 0 20px cyan;
     transition:0.5s;
+    backdrop-filter:blur(5px);
 }
 
 .about-box:hover{
     transform:translateY(-10px);
-    box-shadow:0 0 30px #00f7ff;
+    box-shadow:0 0 30px cyan;
 }
 
 .about-box p{
     line-height:2;
     font-size:18px;
+    color:black;
+    font-weight:500;
 }
 
 .skills{
-    margin-top:4px;
+    margin-top:40px;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    gap:25px;
 }
 
 .skill{
-    background:pink;
+    background:rgba(255,192,203,0.9);
     padding:25px;
     border-radius:15px;
     text-align:center;
-    transition:0.10s;
+    transition:0.3s;
+    backdrop-filter:blur(5px);
 }
 
 .skill:hover{
     background:white;
     color:black;
     transform:scale(1.05);
+    box-shadow:0 0 20px cyan;
+}
+
+.skill h2{
+    margin-bottom:15px;
+    color:darkblue;
+}
+
+.skill p{
+    color:black;
+    font-weight:500;
 }
 
 footer{
-    margin-top:5px;
+    margin-top:40px;
     text-align:center;
     padding:20px;
-    background:ORANGE;
+    background:rgba(255,165,0,0.9);
+    color:black;
+    font-weight:bold;
+    font-size:18px;
 }
 </style>
 </head>
@@ -126,11 +169,11 @@ footer{
 <body>
 
 <nav>
-    <div class="logo">IMAKANDO MUBUKWANU</div>
-  <div class="logo">
-<img src="images/logo.png" alt="KMU">
-
-    <div>
+    <div class="logo">
+        <img src="https://github.com/mubukwanuimakando1-ux/MY-PORTFOLIO/blob/main/logo.png?raw=true" alt="IMAKANDO LOGO">
+        <span>IMAKANDO MUBUKWANU</span>
+    </div>
+    <div class="nav-links">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT ME</a>
         <a href="services.html">MY SERVICES</a>
@@ -138,7 +181,6 @@ footer{
 </nav>
 
 <div class="container">
-
     <h1>ABOUT ME</h1>
 
     <div class="about-box">
@@ -148,9 +190,7 @@ footer{
             I have strong passion for technology innovation, network security,
             penetration testing, ethical hacking, and secure software development.
         </p>
-
         <br>
-
         <p>
             My goal is to use technology to create secure systems and help organizations
             protect their digital information from cyber threats.
@@ -160,7 +200,6 @@ footer{
     </div>
 
     <div class="skills">
-
         <div class="skill">
             <h2>Web Development</h2>
             <p>Professional responsive websites using HTML, CSS, JavaScript and modern technologies.</p>
@@ -175,9 +214,7 @@ footer{
             <h2>Digital Forensics</h2>
             <p>Investigation and analysis of cyber crimes and digital evidence collection.</p>
         </div>
-
     </div>
-
 </div>
 
 <footer>
